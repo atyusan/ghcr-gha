@@ -1,5 +1,10 @@
 name: Publish
 on: [push]
+
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   push-to-gh-cr:
     runs-on: ubuntu-latest
